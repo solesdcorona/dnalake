@@ -1,0 +1,46 @@
+{
+        "id":"michoacan-prod",
+        "servers":[
+            {
+                "id":"node2wf",
+                 "urlbase":"https://kofaxity.saas.appdynamics.com/controller/rest/applications/",
+                 "attributes":[{
+                     "id":"CPU-Busy",
+                     "index":"V",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Individual Nodes|node2wf|Hardware Resources|CPU|%Busy"
+                 },{
+                     "id":"RAM",
+                     "index":"U",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Individual Nodes|node2wf|Hardware Resources|Memory|Used (MB)"
+                 },{
+                     "id":"DiskCount",
+                     "index":"Y",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Individual Nodes|node2wf|Hardware Resources|Volumes|Count"
+                 },{
+                     "id":"DiskCapacity",
+                     "index":"Z",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Individual Nodes|node2wf|Hardware Resources|Volumes|Total (MB)"
+                 },{
+                     "id":"DiskCapacityFree",
+                     "index":"AE",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Individual Nodes|node2wf|Hardware Resources|Volumes|Free (MB)"
+                 },{
+                     "id":"DiskPercentageUsed",
+                     "index":"AK",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Individual Nodes|node2wf|Hardware Resources|Volumes|Used (%)"
+                 },{
+                     "id":"Processor Used",
+                     "index":"AC",
+                     "rest":"Server & Infrastructure Monitoring",
+                     "metricpath":"Application Infrastructure Performance|Root|Hardware Resources|Process|Total Process Count"
+                 }
+                 ]
+             }
+        ]
+}

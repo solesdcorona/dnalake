@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "beaming-axon-209123",
+  "private_key_id": "31eef6296a0d2f5de4f1fe8aaa7b3a2cd1389086",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCl38cb9trWBHUY\ndwVqa/AM0BVkuo2AlP4g4UN+2l4gy+nIJiTXpd/x2qJhzP96yGKyMNJcV53PUIx1\nfFp+QYly4n/tbSfGOILSpUkPP5NFckcZDB92y7Ed6UWqnsdoFJiKmahCQgpjE2Bs\nV0RzJsEhAMWuM6JTnVgfgdP2m638mDgnWXub05o6cYyjvkwwQk980VuLJwho8S1c\nKRMaRC1TZbRhxaSmXHs5prcwv6AZt3vsaWRaOA0bACREBxCbJCDbSIlIlrQzWmSB\nuCXzIphTq9HhxKQOlqtT3lZ4hfGG53+KC+ATWBIb965MyhGJ9IO9Qf7Ioqhb12gJ\nHPFn7hyTAgMBAAECggEAGDBuiQRHkcnw84zj1CBXz4kxctDbss0c1C8ALfRqoU4V\n/R3xkHsm5yOoO3/uynkvdLyMPh15gifvxnBIgryhmTMw+a70i8JmSDwEpVMdnGqC\nYMOKURjPmZo7km/432jlfTd+4zld6hMuJA6D3mZf5/qvWUHmtwUtOocEd07o9qVV\n7Go08W/qj3w8kS9CxJ8JMvWBPGt2xzGMXqkyVMMEgdl0lm5QFgPmKRg2vnmbHJbv\nObq2z5Wq35n0Z+VwleBzkIzKSC51WA21m9QxWut6SO2tcl+6+7Ru/LZ/4LcIXhDx\n3qmxUB+Y76goWlpfrpxqprmdVUTU3bHBW0Xt/A1suQKBgQDZWMxN3l+bmas+JGYf\ntQapmsB6/qc5XVoQ0obh49hCONkyHFB7lOQ5XvkXMZhUxwB0qiK+OTwTLkqmJsDg\nKq0J737CJxKwUNsdpv0y2/jqOsRfs11ymoAViNmMqgqNEesME5KSMlYlKLXOiN42\nrowrmncsXjobenV1mNWOrWOfawKBgQDDX5GBBNZrp6aV/w+jVtuv1G5GfFQUWa04\nxgoBuxD5/vSkT4gsdzw+GGtVYPQwNve7GfSY6k4qlDm0XonTJwVdrBg0D+klTf4/\nc5PZp2t4anN/F0ApHaNXZAWQC5xHd5t25cA67sF1ZY0rdnjP0S1WEvRbWGPppjDZ\n3tTGKfcJeQKBgQDCk5N7lrvDAkRiwpVGh3qqdechdT7hxSfvbXnhWmftiRUwnlaS\n/E2A6vxWfkjghLNsvi+SWozkowmjS4haZvo4rdauG+rIO+qd1jRQxstFbk0FW/8p\nrRVDshsIqeX+Ou9RBWivRy8F3zc76h39mC/WjVdpOgYNOYlUOPne3G0WdwKBgQCo\nSvlmfslJILghuv04gUhp9H4tX0l54imRnx3dkcs03cbUhuHRE8Cj6JsEh6iwo5jP\n5bLJygMdMGNomIr2hUVdBDIxHoeBp+Zbt+5i7ZFov6HPlzKgeDRMwg78ntO2yDP1\nvkDRQvsIajqpdrrooNIBtAAjc0dVa9/mvMjiDiILWQKBgA1PtW8dCZCOhYiGkzpX\nOxeATFnT/kxSNgIwmHYS6jUunYBg9F1U4kCFeh0winkDS7ovZ+Q12aa0ykqH2Ov3\nFUGv5yZxXPCa2B4J9DGet3e6FnEpzeTI5irx9Ipwp1z7vWmPWhOkkEqxhINQMEn8\nXxyHUpgGJ1pgZVusJX1MjsR3\n-----END PRIVATE KEY-----\n",
+  "client_email": "datalake-nosql@beaming-axon-209123.iam.gserviceaccount.com",
+  "client_id": "116566025801107221276",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/datalake-nosql%40beaming-axon-209123.iam.gserviceaccount.com"
+}

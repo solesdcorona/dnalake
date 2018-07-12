@@ -1,0 +1,29 @@
+{
+    "login":{
+        "username":"devnetuser",
+        "password":"Cisco123!",
+        "url":"https://sandboxdnac.cisco.com/api/system/v1/auth/token"
+    },
+    "apis":{
+        "urlbase":"https://sandboxdnac.cisco.com/",
+        "services":[{
+            "url":"dna/intent/api/v1/network-health",
+            "headers": {
+                "__runsync": "true"
+            },
+            "query":{
+                "startTime":"",
+                "endTime":""
+            }
+        },{
+            "url":"api/v1/discovery/6/network-device",
+            "headers": {
+                "__runsync": "true"
+            },
+            "query":{
+                "startTime":"",
+                "endTime":""
+            }
+        }]
+    }
+}
