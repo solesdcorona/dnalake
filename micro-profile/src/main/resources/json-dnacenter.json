@@ -1,29 +1,145 @@
 {
     "login":{
-        "username":"devnetuser",
-        "password":"Cisco123!",
-        "url":"https://sandboxdnac.cisco.com/api/system/v1/auth/token"
+        "username":"admin",
+        "password":"DN4C1sc0123",
+        "url":"https://10.52.81.160/api/system/v1/auth/token"
     },
     "apis":{
-        "urlbase":"https://sandboxdnac.cisco.com/",
         "services":[{
-            "url":"dna/intent/api/v1/network-health",
+            "method":"POST",
+            "response":["request","records"],
+            "urlbase":"https://10.52.81.160/",
+            "url":"api/ndp/v1/data/entities/metrics",
             "headers": {
-                "__runsync": "true"
+                "__runsync": "true",
+                "Content-Type":"application/json"
             },
             "query":{
-                "startTime":"",
-                "endTime":""
+                "page":"1",
+                "pageSize":"700",
+                "order":"DESC"
+            },
+            "body":{
+                "entity":{
+                    "managementIpAddr":"172.16.30.4"
+                },
+                "name":"snmp_envtemp_per_device",
+                "fields":[
+                    "envtemp_fn"
+                ],
+                "window":"15 min",
+                "dimensions":[
+                    {
+                        "name":"o_sensorName",
+                        "value":"Switch 1 - Temp Sensor 0, GREEN "
+                    }
+                ],
+                "timeRange":{
+                    "start":"2018-08-20T22:11:31.626Z",
+                    "end":"2018-08-26T22:11:31.626Z"
+                }
             }
         },{
-            "url":"api/v1/discovery/6/network-device",
+            "method":"POST",
+            "urlbase":"https://10.52.81.160/",
+            "response":["request","records"],
+            "url":"api/ndp/v1/data/entities/metrics",
             "headers": {
-                "__runsync": "true"
+                "__runsync": "true",
+                "Content-Type":"application/json"
             },
             "query":{
-                "startTime":"",
-                "endTime":""
+                "page":"1",
+                "pageSize":"700",
+                "order":"DESC"
+            },
+            "body":{
+                "entity":{
+                    "managementIpAddr":"172.16.30.4"
+                },
+                "name":"snmp_envtemp_per_device",
+                "fields":[
+                    "envtemp_fn"
+                ],
+                "window":"15 min",
+                "dimensions":[
+                    {
+                        "name":"o_sensorName",
+                        "value":"Switch 1 - Temp Sensor 1, GREEN "
+                    }
+                ],
+                "timeRange":{
+                    "start":"2018-08-20T22:11:31.626Z",
+                    "end":"2018-08-26T22:11:31.626Z"
+                }
             }
-        }]
+        },{
+            "method":"POST",
+            "urlbase":"https://10.52.81.160/",
+            "response":["request","records"],
+            "url":"api/ndp/v1/data/entities/metrics",
+            "headers": {
+                "__runsync": "true",
+                "Content-Type":"application/json"
+            },
+            "query":{
+                "page":"1",
+                "pageSize":"700",
+                "order":"DESC"
+            },
+            "body":{
+                "entity":{
+                    "managementIpAddr":"172.16.30.4"
+                },
+                "name":"snmp_envtemp_per_device",
+                "fields":[
+                    "envtemp_fn"
+                ],
+                "window":"15 min",
+                "dimensions":[
+                    {
+                        "name":"o_sensorName",
+                        "value":"Switch 1 - Temp Sensor 2, GREEN "
+                    }
+                ],
+                "timeRange":{
+                    "start":"2018-08-20T22:11:31.626Z",
+                    "end":"2018-08-26T22:11:31.626Z"
+                }
+            }
+        },
+            {
+                "system":"appdynamcis",
+                "method":"POST",
+                "urlbase":"https://kofaxity.saas.appdynamics.com/controller/",
+                "response":["data"],
+                "url":"sim/v2/user/metrics/query/machines",
+                "headers": {
+                    "Content-Type":"application/json"
+                },
+                "query":{
+                },
+                "body":{
+                    "timeRange":"last_1_hour.BEFORE_NOW.-1.-1.60",
+                    "metricNames":[
+                        "Hardware Resources|Network|Incoming KB/sec",
+                        "Hardware Resources|Network|Outgoing KB/sec",
+                        "Hardware Resources|Memory|Used %",
+                        "Hardware Resources|Memory|Swap Used %",
+                        "Hardware Resources|Memory|Total (MB)",
+                        "Hardware Resources|CPU|%Busy",
+                        "Hardware Resources|CPU|%Stolen",
+                        "Hardware Resources|CPU|System"
+                    ],
+                    "rollups":[
+                        2
+                    ],
+                    "ids":[
+                        5105
+                    ],
+                    "baselineId":null
+                }
+
+            }]
     }
 }

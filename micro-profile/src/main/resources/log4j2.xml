@@ -5,10 +5,16 @@
             <PatternLayout
                 pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
         </Console>
+        <File name="fileM" fileName="/server/logs/payara-micro.log" bufferedIO="false" advertiseURI="file://server/logs/payara-micro.log" advertise="true">
+            <PatternLayout
+                    pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n" />
+        </File>
     </Appenders>
+
     <Loggers>
         <Root level="debug" additivity="false">
             <AppenderRef ref="console" />
+            <AppenderRef ref="fileM" />
         </Root>
     </Loggers>
 </Configuration>

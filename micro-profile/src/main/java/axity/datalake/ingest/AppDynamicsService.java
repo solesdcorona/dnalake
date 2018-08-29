@@ -30,7 +30,7 @@ public class AppDynamicsService  {
     @Inject
     private ExcelService excelService;
 
-    //@PostConstruct
+//    @PostConstruct
     public void initCron(){
         logger.info("======== Iniciando Singleton...=============");
         System.out.println("======== Iniciando Singleton...=============");

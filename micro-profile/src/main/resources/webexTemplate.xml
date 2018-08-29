@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serv:message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header>
+        <securityContext>
+            <webExID>rogelio.corona@axity.com</webExID>
+            <password>Such5283#</password>
+            <siteName>getronicsmxsk</siteName>
+        </securityContext>
+    </header>
+    <body>
+        <bodyContent xsi:type="java:com.webex.service.binding.meeting.CreateMeeting">
+            <accessControl>
+                <meetingPassword>Such5283#</meetingPassword>
+            </accessControl>
+            <metaData>
+                <confName>Webex Tittle</confName>
+                <agenda>Webex session</agenda>
+            </metaData>
+            <participants>
+                <maxUserNumber>4</maxUserNumber>
+
+            </participants>
+            <enableOptions>
+                <chat>true</chat>
+                <poll>true</poll>
+                <audioVideo>true</audioVideo>
+            </enableOptions>
+            <schedule>
+                <timeZoneID>8</timeZoneID>
+            </schedule>
+            <telephony>
+                <telephonySupport>CALLIN</telephonySupport>
+                <extTelephonyDescription>
+                    Call 1-800-555-1234, Passcode 98765
+                </extTelephonyDescription>
+            </telephony>
+            <attendeeOptions>
+                <emailInvitations>true</emailInvitations>
+            </attendeeOptions>
+        </bodyContent>
+    </body>
+</serv:message>

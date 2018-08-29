@@ -7,12 +7,12 @@ import axity.datalake.ingest.appdynamics.clientrest.to.ServerTO;
 import axity.datalake.ingest.appdynamics.service.to.ColumnValueTO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.appdynamics.appdrestapi.RESTAccess;
+/*import org.appdynamics.appdrestapi.RESTAccess;
 import org.appdynamics.appdrestapi.data.MetricData;
 import org.appdynamics.appdrestapi.data.MetricDatas;
 import org.appdynamics.appdrestapi.data.MetricValue;
 import org.appdynamics.appdrestapi.data.MetricValues;
-
+*/
 import javax.enterprise.inject.Default;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -56,7 +56,7 @@ public class ControllerServiceImpl implements ControllerService {
                 try {
                     String restService = urlbase.concat(a.getRest().concat(a.getMetricpath()));
                     logger.info("get {}",restService);
-                    RESTAccess access=new RESTAccess("kofaxity.saas.appdynamics.com",
+                   /* RESTAccess access=new RESTAccess("kofaxity.saas.appdynamics.com",
                         "443",true,"kofaxity","vh1pwo0099gp","kofaxity");
                     MetricDatas metric = access.getRESTGenericMetricQuery(a.getRest(),
                         a.getMetricpath(),
@@ -77,7 +77,7 @@ public class ControllerServiceImpl implements ControllerService {
                         columnValueTO.setValueColumn(String.valueOf(sv.getValue()));
                     });
                     columnValueTO.setIndexColumn(a.getIndex());
-
+                    */
                     /*HttpClient client = HttpClient.newBuilder()
                         .authenticator(new Authenticator() {
                             @Override

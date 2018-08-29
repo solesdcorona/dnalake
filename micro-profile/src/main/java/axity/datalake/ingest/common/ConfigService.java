@@ -1,7 +1,7 @@
 package axity.datalake.ingest.common;
 
 import axity.datalake.ingest.appdynamics.clientrest.to.ProjectTO;
-import axity.datalake.ingest.ciscodna.rest.to.ApiTO;
+import axity.datalake.ingest.ciscodna.to.ApiTO;
 
 public interface ConfigService {
 
