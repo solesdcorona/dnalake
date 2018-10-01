@@ -133,13 +133,7 @@
             <artifactId>log4j-core</artifactId>
             <version>2.11.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.oracle.com.fasterxml.jackson.core.jackson.annotations</groupId>
-            <artifactId>jackson-annotations-2.7.9</artifactId>
-            <version>2.7.9-0-0</version>
-            <scope>provided</scope>
-        </dependency>
-
+        
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
