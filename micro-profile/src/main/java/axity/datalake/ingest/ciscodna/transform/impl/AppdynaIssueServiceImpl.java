@@ -55,7 +55,7 @@ public class AppdynaIssueServiceImpl extends IssueBase implements IssueService {
             match(Filters.eq("body.service", "sim/v2/user/metrics/query/machines")),
             sort(new Document("date",-1)),
             limit(1),
-            project(new Document("metric", new Document("$objectToArray", "$body.data.data.2.4964.metricData")).append("_id",0)),
+            project(new Document("metric", new Document("$objectToArray", "$body.data.data.2.5105.metricData")).append("_id",0)),
             unwind("$metric"),
             unwind("$metric.v.simMeasurementDtos"),//new Document("$avg","$metric.v.simMeasurementDtos.metricValue.value")
             group(new Document("name","$metric.k"),Accumulators.avg("promedio","$metric.v.simMeasurementDtos.metricValue.value")),
