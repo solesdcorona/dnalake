@@ -30,7 +30,7 @@ public class RemedyServiceImpl implements RemedyService {
             String postJson = gson.toJson(remedyTO);
             logger.info("push Remedy {}",postJson);
             request = HttpRequest.newBuilder()
-                .uri(new URI("http://35.184.117.21:8092/micro-profile/appdynamics/remedy"))
+                .uri(new URI("http://35.224.70.242:8092/micro-profile/appdynamics/remedy"))
                 .headers("Content-Type", "application/json;charset=UTF-8")
                 .POST(HttpRequest.BodyProcessor.fromString(postJson))
                 .build();

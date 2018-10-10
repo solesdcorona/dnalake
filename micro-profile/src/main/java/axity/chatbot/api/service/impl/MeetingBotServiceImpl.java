@@ -298,20 +298,8 @@ public class MeetingBotServiceImpl implements MeetingBotService {
 
             return gson.toJson(jsonResponse);
             //
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (TransformerConfigurationException e) {
-            e.printStackTrace();
-        } catch (TransformerException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            logger.error("Error al crear el webex",e);
         }
 
         return null;
